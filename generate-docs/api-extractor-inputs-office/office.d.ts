@@ -8248,7 +8248,7 @@ export declare namespace OfficeExtension {
      * When a browser-provided native Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead.
      */
     const Promise: Office.IPromiseConstructor;
-    type IPromise<T> = Promise<T>;
+    export type IPromise<T> = Promise<T>;
 
     /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
     export class TrackedObjects {

@@ -1,7 +1,7 @@
 | Class | Fields | Description |
 |:---|:---|:---|
 |[AutoFilter](/javascript/api/excel/excel.autofilter)|[clearColumnCriteria(columnIndex: number)](/javascript/api/excel/excel.autofilter#clearcolumncriteria-columnindex-)|Clears the filter criteria of the AutoFilter.|
-|[Comment](/javascript/api/excel/excel.comment)|[assignTask(assignee: Identity)](/javascript/api/excel/excel.comment#assigntask-assignee-)|Assigns the task attached to the comment to the given user as an assignee.|
+|[ChartFill](/javascript/api/excel/excel.chartfill)||[Comment](/javascript/api/excel/excel.comment)|[assignTask(assignee: Identity)](/javascript/api/excel/excel.comment#assigntask-assignee-)|Assigns the task attached to the comment to the given user as an assignee.|
 ||[getTask()](/javascript/api/excel/excel.comment#gettask--)|Gets the task associated with this comment.|
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.comment#gettaskornullobject--)|Gets the task associated with this comment.|
 |[CommentCollection](/javascript/api/excel/excel.commentcollection)|[getItemOrNullObject(commentId: string)](/javascript/api/excel/excel.commentcollection#getitemornullobject-commentid-)|Gets a comment from the collection based on its ID.|
@@ -10,7 +10,7 @@
 ||[getTaskOrNullObject()](/javascript/api/excel/excel.commentreply#gettaskornullobject--)|Gets the task associated with this comment reply's thread.|
 |[CommentReplyCollection](/javascript/api/excel/excel.commentreplycollection)|[getItemOrNullObject(commentReplyId: string)](/javascript/api/excel/excel.commentreplycollection#getitemornullobject-commentreplyid-)|Returns a comment reply identified by its ID.|
 |[ConditionalFormatCollection](/javascript/api/excel/excel.conditionalformatcollection)|[getItemOrNullObject(id: string)](/javascript/api/excel/excel.conditionalformatcollection#getitemornullobject-id-)|Returns a conditional format identified by its ID.|
-|[DocumentTask](/javascript/api/excel/excel.documenttask)|[percentComplete](/javascript/api/excel/excel.documenttask#percentcomplete)|Specifies the completion percentage of the task.|
+|[DataConnectionCollection](/javascript/api/excel/excel.dataconnectioncollection)||[DocumentTask](/javascript/api/excel/excel.documenttask)|[percentComplete](/javascript/api/excel/excel.documenttask#percentcomplete)|Specifies the completion percentage of the task.|
 ||[priority](/javascript/api/excel/excel.documenttask#priority)|Specifies the priority of the task.|
 ||[assignees](/javascript/api/excel/excel.documenttask#assignees)|Returns a collection of assignees of the task.|
 ||[changes](/javascript/api/excel/excel.documenttask#changes)|Gets the change records of the task.|
@@ -47,7 +47,7 @@
 ||[startDateTime](/javascript/api/excel/excel.documenttaskschedule#startdatetime)|Gets the date and time that the task should start.|
 |[FormulaChangedEventDetail](/javascript/api/excel/excel.formulachangedeventdetail)|[cellAddress](/javascript/api/excel/excel.formulachangedeventdetail#celladdress)|The address of the cell that contains the changed formula.|
 ||[previousFormula](/javascript/api/excel/excel.formulachangedeventdetail#previousformula)|Represents the previous formula, before it was changed.|
-|[GroupShapeCollection](/javascript/api/excel/excel.groupshapecollection)|[getItemOrNullObject(key: string)](/javascript/api/excel/excel.groupshapecollection#getitemornullobject-key-)|Gets a shape using its name or ID.|
+|[Functions](/javascript/api/excel/excel.functions)||[GroupShapeCollection](/javascript/api/excel/excel.groupshapecollection)|[getItemOrNullObject(key: string)](/javascript/api/excel/excel.groupshapecollection#getitemornullobject-key-)|Gets a shape using its name or ID.|
 |[Identity](/javascript/api/excel/excel.identity)|[displayName](/javascript/api/excel/excel.identity#displayname)|Represents the user's display name.|
 ||[email](/javascript/api/excel/excel.identity#email)|Represents the user's email address.|
 ||[id](/javascript/api/excel/excel.identity#id)|Represents the user's unique ID.|
@@ -108,7 +108,7 @@
 ||[getMergedAreasOrNullObject()](/javascript/api/excel/excel.range#getmergedareasornullobject--)|Returns a RangeAreas object that represents the merged areas in this range.|
 ||[getPrecedents()](/javascript/api/excel/excel.range#getprecedents--)|Returns a `WorkbookRangeAreas` object that represents the range containing all the precedents of a cell in the same worksheet or in multiple worksheets.|
 ||[getRangeEdge(direction: Excel.KeyboardDirection, activeCell?: Range \| string)](/javascript/api/excel/excel.range#getrangeedge-direction--activecell-)|Returns a range object that is the edge cell of the data region that corresponds to the provided direction.|
-|[RefreshModeChangedEventArgs](/javascript/api/excel/excel.refreshmodechangedeventargs)|[refreshMode](/javascript/api/excel/excel.refreshmodechangedeventargs#refreshmode)|The linked data type refresh mode.|
+|[RangeSort](/javascript/api/excel/excel.rangesort)||[RefreshModeChangedEventArgs](/javascript/api/excel/excel.refreshmodechangedeventargs)|[refreshMode](/javascript/api/excel/excel.refreshmodechangedeventargs#refreshmode)|The linked data type refresh mode.|
 ||[serviceId](/javascript/api/excel/excel.refreshmodechangedeventargs#serviceid)|The unique ID of the object whose refresh mode was changed.|
 ||[source](/javascript/api/excel/excel.refreshmodechangedeventargs#source)|Gets the source of the event.|
 ||[type](/javascript/api/excel/excel.refreshmodechangedeventargs#type)|Gets the type of the event.|
@@ -117,6 +117,8 @@
 ||[source](/javascript/api/excel/excel.refreshrequestcompletedeventargs#source)|Gets the source of the event.|
 ||[type](/javascript/api/excel/excel.refreshrequestcompletedeventargs#type)|Gets the type of the event.|
 ||[warnings](/javascript/api/excel/excel.refreshrequestcompletedeventargs#warnings)|An array that contains any warnings generated from the refresh request.|
+|[SettableColumnProperties](/javascript/api/excel/excel.settablecolumnproperties)|[format: Excel.CellPropertiesFormat & {            columnWidth?](/javascript/api/excel/excel.settablecolumnproperties#format)|Represents the `format` property.|
+|[SettableRowProperties](/javascript/api/excel/excel.settablerowproperties)|[format: Excel.CellPropertiesFormat & {            rowHeight?](/javascript/api/excel/excel.settablerowproperties#format)|Represents the `format` property.|
 |[ShapeCollection](/javascript/api/excel/excel.shapecollection)|[addSvg(xml: string)](/javascript/api/excel/excel.shapecollection#addsvg-xml-)|Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet.|
 ||[getItemOrNullObject(key: string)](/javascript/api/excel/excel.shapecollection#getitemornullobject-key-)|Gets a shape using its name or ID.|
 |[Slicer](/javascript/api/excel/excel.slicer)|[nameInFormula](/javascript/api/excel/excel.slicer#nameinformula)|Represents the slicer name used in the formula.|
@@ -153,3 +155,4 @@
 ||[source](/javascript/api/excel/excel.worksheetformulachangedeventargs#source)|The source of the event.|
 ||[type](/javascript/api/excel/excel.worksheetformulachangedeventargs#type)|Gets the type of the event.|
 ||[worksheetId](/javascript/api/excel/excel.worksheetformulachangedeventargs#worksheetid)|Gets the ID of the worksheet in which the formula changed.|
+|[WorksheetFreezePanes](/javascript/api/excel/excel.worksheetfreezepanes)|

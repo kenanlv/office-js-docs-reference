@@ -2,7 +2,7 @@
 |:---|:---|:---|
 |[AddSlideOptions](/javascript/api/powerpoint/powerpoint.addslideoptions)|[layoutId](/javascript/api/powerpoint/powerpoint.addslideoptions#layoutid)|Specifies the ID of a Slide Layout to be used for the new slide.|
 ||[slideMasterId](/javascript/api/powerpoint/powerpoint.addslideoptions#slidemasterid)|Specifies the ID of a Slide Master to be used for the new slide.|
-|[Presentation](/javascript/api/powerpoint/powerpoint.presentation)|[slideMasters](/javascript/api/powerpoint/powerpoint.presentation#slidemasters)|Returns the collection of `SlideMaster` objects that are in the presentation.|
+|[Application](/javascript/api/powerpoint/powerpoint.application)||[Presentation](/javascript/api/powerpoint/powerpoint.presentation)|[slideMasters](/javascript/api/powerpoint/powerpoint.presentation#slidemasters)|Returns the collection of `SlideMaster` objects that are in the presentation.|
 |[Shape](/javascript/api/powerpoint/powerpoint.shape)|[id](/javascript/api/powerpoint/powerpoint.shape#id)|Gets the unique ID of the shape.|
 |[ShapeCollection](/javascript/api/powerpoint/powerpoint.shapecollection)|[getCount()](/javascript/api/powerpoint/powerpoint.shapecollection#getcount--)|Gets the number of shapes in the collection.|
 ||[getItem(key: string)](/javascript/api/powerpoint/powerpoint.shapecollection#getitem-key-)|Gets a shape using its unique ID.|

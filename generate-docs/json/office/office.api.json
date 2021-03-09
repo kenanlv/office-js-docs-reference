@@ -32170,7 +32170,7 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "type IPromise<T> = "
+                  "text": "export type IPromise<T> = "
                 },
                 {
                   "kind": "Reference",
