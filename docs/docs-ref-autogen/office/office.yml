@@ -105,6 +105,16 @@ classes:
   - 'office!OfficeExtension.EventHandlerResult:class'
   - 'office!OfficeExtension.EventHandlers:class'
   - 'office!OfficeExtension.TrackedObjects:class'
+typeAliases:
+  - name: IPromise
+    uid: 'office!OfficeExtension.IPromise:type'
+    package: office
+    fullName: IPromise
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax: export declare type IPromise<T> = Promise<T>;
 functions:
   - name: Office.initialize(reason)
     uid: 'office!Office.initialize:function(1)'
