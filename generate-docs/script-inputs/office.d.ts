@@ -878,8 +878,7 @@ declare namespace Office {
         interface Source {
 
             /**
-             * The ID of the control that triggered calling this function. The ID comes from the manifest and is the unique ID of your Office Add-in 
-             * as a GUID.
+             * The ID of the control that triggered calling this function. The ID comes from the manifest.
              */
             id: string;
         }
@@ -960,7 +959,7 @@ declare namespace Office {
         *   </tr>
         *   <tr>
         *     <td>12004</td>
-        *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <AppDomains> section of the add-in manifest.</td>
+        *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the `AppDomains` section of the add-in manifest.</td>
         *   </tr>
         *   <tr>
         *     <td>12005</td>
@@ -1002,7 +1001,7 @@ declare namespace Office {
         *   </tr>
         * </table>
         *
-        * @param startAddress - Accepts the initial HTTPS URL that opens in the dialog.
+        * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
         * @param options - Optional. Accepts an {@link Office.DialogOptions} object to define dialog display.
         * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
         */
@@ -1061,7 +1060,7 @@ declare namespace Office {
         *   </tr>
         *   <tr>
         *     <td>12004</td>
-        *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <AppDomains> section of the add-in manifest.</td>
+        *     <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the `AppDomains` section of the add-in manifest.</td>
         *   </tr>
         *   <tr>
         *     <td>12005</td>
@@ -1103,7 +1102,7 @@ declare namespace Office {
         *   </tr>
         * </table>
         *
-        * @param startAddress - Accepts the initial HTTPS URL that opens in the dialog.
+        * @param startAddress - Accepts the initial full HTTPS URL that opens in the dialog. Relative URLs must not be used.
         * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
         */
         displayDialogAsync(startAddress: string, callback?: (result: AsyncResult<Dialog>) => void): void;
